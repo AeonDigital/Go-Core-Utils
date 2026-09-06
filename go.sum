@@ -1,7 +1,7 @@
-github.com/AeonDigital/Go-Core-xerrors v0.0.5 h1:d/16k/lEKxY6sQp7jcmSsgRBdp5xgLCbbUJcjm6/Ii0=
-github.com/AeonDigital/Go-Core-xerrors v0.0.5/go.mod h1:WuMei4yMFexZqeABKOuPrDfhUlqa80xp1XAFP/6tObU=
-github.com/AeonDigital/Go-Core-xfs v0.0.5 h1:QJ4MMZjUCXSGK3VHKBBETKWGUbEHtA02a06CrmLl1Zs=
-github.com/AeonDigital/Go-Core-xfs v0.0.5/go.mod h1:T3wFX4k7bkbiHJ2x5DdJt/Kjxi3FsRDf6e+b60rfMEU=
+github.com/AeonDigital/Go-Core-xerrors v0.0.7 h1:jOOCqDCaWi9WvXp7ZdQ+ypR02vPWXIV3bvIykqD2oO4=
+github.com/AeonDigital/Go-Core-xerrors v0.0.7/go.mod h1:WuMei4yMFexZqeABKOuPrDfhUlqa80xp1XAFP/6tObU=
+github.com/AeonDigital/Go-Core-xfs v0.0.7 h1:H8mxDzO+HpCFf7gmc7UiO+dj7irHghgFj+NvO6zHd0c=
+github.com/AeonDigital/Go-Core-xfs v0.0.7/go.mod h1:gmTh4fEwJC8xhp/hp4v6ZTiHU/sFmWpRM1XamBXAaTw=
 golang.org/x/sys v0.47.0 h1:o7XGOvZQCADBQQ4Y7VNq2dRWQR7JmOUW8Kxx4ZsNgWs=
 golang.org/x/sys v0.47.0/go.mod h1:4GL1E5IUh+htKOUEOaiffhrAeqysfVGipDYzABqnCmw=
 golang.org/x/term v0.45.0 h1:NwWyBmoJCbfTHpxrWoZ9C6/VxOf7ic219I8xZZFdrf0=
