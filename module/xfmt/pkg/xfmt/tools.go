@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 	"strings"
+	"text/tabwriter"
 )
 
 // PrintLog writes a message to the standard output.
@@ -22,4 +23,38 @@ func Print(message string, args ...any) {
 		format += "\n"
 	}
 	fmt.Fprintf(os.Stdout, format, args...)
+}
+
+// PrintAsTable Prints data formatted in columns to the terminal based on the provided headers.
+func PrintAsTable(headers []string, rows [][]string) {
+	if len(headers) == 0 {
+		return
+	}
+
+	tabW := tabwriter.NewWriter(os.Stdout, 0, 0, 3, ' ', 0)
+	defer tabW.Flush()
+
+	format := strings.Repeat("%s\t", len(headers)-1) + "%s\n"
+
+	// Converts headers from []string to []any for Fprintf
+	headerArgs := make([]any, len(headers))
+	for i, v := range headers {
+		headerArgs[i] = v
+	}
+	fmt.Fprintf(tabW, format, headerArgs...)
+
+	// Prints each line of data
+	for _, row := range rows {
+		// Ensures the line has the same number of columns as the format expects
+		if len(row) != len(headers) {
+			continue
+		}
+
+		rowArgs := make([]any, len(row))
+		for i, v := range row {
+			rowArgs[i] = v
+		}
+
+		fmt.Fprintf(tabW, format, rowArgs...)
+	}
 }
